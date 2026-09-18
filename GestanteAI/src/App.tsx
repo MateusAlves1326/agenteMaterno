@@ -7,7 +7,7 @@ interface Message {
   text: string
 }
 
-const API_URL = `http://${window.location.hostname}:8080/chat`
+const API_URL = `/chat`
 
 // URL da API do chat
 function App() {
