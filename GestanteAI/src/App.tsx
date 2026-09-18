@@ -7,7 +7,7 @@ interface Message {
   text: string
 }
 
-const API_URL = `/chat`
+const API_URL = (import.meta.env.VITE_API_URL || '/chat').replace(/\/$/, '')
 
 // URL da API do chat
 function App() {
